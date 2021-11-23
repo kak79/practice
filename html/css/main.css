@@ -5,10 +5,10 @@ html {
 }
 
 body{
+  background-color:lavender;
   padding: 0;
   width: 50em;
   margin:auto;
-  background-color:lavender;
   box-shadow: 18px 17px 18px 10px #724f93, 5px 5px 10px 1px #000;
   border: 2px solid black;
   min-height: 100vh;
@@ -28,46 +28,17 @@ body{
   font-size: 3em;
 }
 
-.content nav{
-  color: darkblue;
+.nav{
   background-color:darkslateblue;
   border-bottom: 2px solid black; 
 }
 
-.content nav ul li {
+
+.nav ul li {
   float: left;
 }
 
-.content nav ul li:last-child{
-  float: right;
-}
-
-.image{
-  text-align: center;
-  animation: myAnim 5s linear 0s infinite reverse forwards;
-}
-@keyframes myAnim {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-ul {
-  color: darkblue;
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-
-
-ul li a {
+.nav ul li a {
   padding: 1em 2em;
   text-decoration: none;
   text-align: center;
@@ -75,20 +46,65 @@ ul li a {
   color: white; 
 }
 
-li a:hover {
-  background-color:black;
+.nav ul li:last-child{
+  float: right;
+}
+
+.nav li a:hover {
+  color: chartreuse;
+}
+
+
+.image{
+  padding: 2em;
+  text-align: center;
+  animation: myAnim 5s linear 0s infinite reverse forwards;
+}
+@keyframes myAnim {
+  0% {
+    transform: rotate(0);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about{
+  text-align: justify;
+  padding: 5em;
 }
 
 .footer{
-  background-color: darkslateblue;
-  height:10em;
-  text-align: center;  
-  margin-top: auto;
-  margin: 0;
-  padding: 1.5em;
-  color:white;
+  background: linear-gradient(164deg, #1b1c1c 0%, #724f93 51%, #fff 100%);
+  color: white;
+  border: 1mm;
+  padding: 3.5em;
+  text-align: center;
 }
 
+.head{
+  color: darkcyan;
+  text-align: center;
+  border: black;
+}
+
+.footer #license a {
+  color: cyan;
+}
+
+.footer #license a:hover {
+  color: chartreuse;
+}
+
+ul {
+  color: fuchsia;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
 .main {
   padding: 1.5em;

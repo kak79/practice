@@ -1,0 +1,31 @@
+.formGetAllBikes{
+  text-align: center;
+  color: indigo;
+}
+
+.formGetAllBikes #getAll{
+  background-color: indigo;
+  color: azure;
+  padding: 14px 40px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.formGetTypeBikes{
+  text-align: center;
+  color: indigo;
+}
+.formGetTypeBikes #type{
+  background-color: indigo;
+  color: azure;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+.formGetTypeBikes #getMorS{
+  background-color: indigo;
+  color: azure;
+  padding: 14px 40px;
+  font-size: 20px;
+  border-radius: 12px;
+}
