@@ -22,7 +22,7 @@
       </div>
 
       <div class="formGetAllBikes">
-        <h2 id="title"><u>Get A List of All Bikes Available</u></h2>
+        <h2 class="title"><u>Get A List of All Bikes Available</u></h2>
         <form action="http://localhost:8080/bikes" method="GET">
 
           
@@ -30,10 +30,10 @@
         </form>
       </div>
 
-      <hr>
+        <hr class="hr">
 
       <div class="formGetTypeBikes">
-        <h2 id="title">Get A List of All Mountain or Street Bikes</h2>
+        <h2 class="title"><u>Get A List of All Mountain or Street Bikes</u></h2>
         <form action="http://localhost:8080/bikes" method="GET">
 
           <select name="type" id="type">
@@ -47,10 +47,10 @@
         </form>
       </div> 
       
-      <hr>
+      <hr class="hr">
 
       <div class="formGetColorBikes">
-        <p id="title">Get A List of All Bikes of a Certain Color</p>
+        <h2 class="title"><u>Get a List of All Bikes of a Certain Color</u></h2>
         <form action="http://localhost:8080/bikes" method="GET">
 
           <p>Choose the Color of the Bike.</p>
@@ -62,18 +62,18 @@
           <label for="green">Green</label>
           <br>
           <br>
-          <button type="submit" >Get Color Specific Bikes List</button> 
+          <button type="submit" id="getColor">Get Color Specific Bikes List</button> 
         </form>
       </div>         
 
-      <hr>
+      <hr class="hr">
 
       <div class="formAddBike">
-        <p id="title">Add a Bike to the Store</p>
+        <h2 class="title"><u>Add a Bike to the Store</u></h2>
         <form action="http://localhost:8080/bikes" method="POST">
 
 
-          <select name="type" id="type">
+          <select name="type" id="type2">
             <option value="selectType">Select Type of Bike</option>
             <option id="mountain" value="Mountain">Mountain</option>
             <option id="street" value="Street">Street</option>
@@ -90,7 +90,7 @@
           <label for="green">Green</label>
 
           <br>
-
+          <br>
 
           <select name="m_f_config" id="m_f_config">
             <option value="selectMorF">Select M or F Configuration of Bike</option>
@@ -111,7 +111,7 @@
           <br>
           <br>
 
-          <button type="submit" >Make a New Bike</button>
+          <button type="submit" id="setMake">Make a New Bike</button>
         </form>
       </div>
 

@@ -11,10 +11,19 @@
   border-radius: 12px;
 }
 
+.hr{
+  height:5px; 
+  width:75%; 
+  border-width:0; 
+  color:darkcyan; 
+  background-color:darkcyan
+}
+
 .formGetTypeBikes{
   text-align: center;
   color: indigo;
 }
+
 .formGetTypeBikes #type{
   background-color: indigo;
   color: azure;
@@ -22,7 +31,50 @@
   font-size: 18px;
   border-radius: 12px;
 }
+
 .formGetTypeBikes #getMorS{
+  background-color: indigo;
+  color: azure;
+  padding: 14px 40px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.formGetColorBikes{
+  text-align: center;
+  color: indigo;
+}
+
+.formGetColorBikes #getColor{
+  background-color: indigo;
+  color: azure;
+  padding: 14px 40px;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.formAddBike{
+  text-align: center;
+  color: indigo;
+}
+
+.formAddBike #type2{
+  background-color: indigo;
+  color: azure;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.formAddBike #m_f_config{
+  background-color: indigo;
+  color: azure;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.formAddBike #setMake{
   background-color: indigo;
   color: azure;
   padding: 14px 40px;
