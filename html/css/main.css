@@ -55,25 +55,6 @@ body{
 }
 
 
-.image{
-  padding: 2em;
-  text-align: center;
-  animation: myAnim 5s linear 0s infinite reverse forwards;
-}
-@keyframes myAnim {
-  0% {
-    transform: rotate(0);
-  }
-  
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.about{
-  text-align: justify;
-  padding: 5em;
-}
 
 .footer{
   background: linear-gradient(164deg
