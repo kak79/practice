@@ -8,9 +8,10 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.revature.data.BikeDao;
+import com.revature.data.BikePostgres;
+import com.revature.exceptions.NoBikesFoundException;
 import com.revature.models.Bike;
-import com.revature.repositories.BikeDao;
-import com.revature.repositories.BikePostgres;
 
 public class BikeTests {
 	
@@ -23,27 +24,12 @@ public class BikeTests {
 	}
 	
 	@Test
-	public void getAllBikes() {
+	public void getAllBikes() throws NoBikesFoundException{
 		
-		List<Bike> allBikes = new ArrayList<>();
-		Bike bk1 = new Bike(1,"street", "red", "m", 3);
-		Bike bk2 = new Bike(2,"mountain", "blue", "f", 5);
-		Bike bk3 = new Bike(3,"mountain", "green", "f", 3);
-		Bike bk4 = new Bike(4,"mountain", "blue", "m", 5);
-			
-		
-		allBikes.add(bk1);
-		allBikes.add(bk2);
-		allBikes.add(bk3);
-		allBikes.add(bk4);
-		System.out.println(bk1);
-		System.out.println(bk2);
-		System.out.println(bk3);
-		System.out.println(bk4);
-		System.out.println(allBikes);
+
 		
 		List<Bike> expected = null;
-		expected = allBikes;
+		// expected = allBikes;
 		System.out.println(expected);
 		
 		List<Bike> actual = bike.getAllBikes();

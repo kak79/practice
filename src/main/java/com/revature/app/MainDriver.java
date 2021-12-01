@@ -1,4 +1,4 @@
-package com.revature.drivers;
+package com.revature.app;
 
 public class MainDriver {
 

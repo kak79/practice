@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bikes">
+  <title>Bike API Home</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/result.css">
+</head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <h1 class="head">Bike API</h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="bikes.html">Bikes</a></li>
+          <li><a href="cntct.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="formGetAllBikes">
+        <h2 class="title"><u>Get A List of All Bikes Available</u></h2>
+        <form action="http://localhost:8080/bikes" method="GET">
+
+          
+          <button type="submit" id="getAll">Get All Bikes List</button>
+        </form>
+      </div>
+
+        <hr class="hr">
+
+      <div class="formGetTypeBikes">
+        <h2 class="title"><u>Get A List of All Mountain or Street Bikes</u></h2>
+        <form action="http://localhost:8080/bikes" method="GET">
+
+          <select name="type" id="type">
+            <option value="selectType">Select Type of Bike</option>
+            <option id="mountain" value="Mountain">Mountain</option>
+            <option id="street" value="Street">Street</option>
+          </select>
+          <br>
+          <br>
+          <button type="submit" id="getMorS">Get List of Bikes</button> 
+        </form>
+      </div> 
+      
+      <hr class="hr">
+
+      <div class="formGetColorBikes">
+        <h2 class="title"><u>Get a List of All Bikes of a Certain Color</u></h2>
+        <form action="http://localhost:8080/bikes" method="GET">
+
+          <p>Choose the Color of the Bike.</p>
+          <input type="radio" id="red" name="color" value="Red">
+          <label for="red">Red</label>
+          <input type="radio" id="blue" name="color" value="Blue">
+          <label for="blue">Blue</label>
+          <input type="radio" id="green" name="color" value="Green">
+          <label for="green">Green</label>
+          <br>
+          <br>
+          <button type="submit" id="getColor">Get Color Specific Bikes List</button> 
+        </form>
+      </div>         
+
+      <hr class="hr">
+
+      <div class="formAddBike">
+        <h2 class="title"><u>Add a Bike to the Store</u></h2>
+        <form action="http://localhost:8080/bikes" method="POST">
+
+
+          <select name="type" id="type2">
+            <option value="selectType">Select Type of Bike</option>
+            <option id="mountain" value="Mountain">Mountain</option>
+            <option id="street" value="Street">Street</option>
+          </select>
+
+          <br>
+
+          <p>Choose the Color of the Bike.</p>
+          <input type="radio" id="red" name="color" value="Red">
+          <label for="red">Red</label>
+          <input type="radio" id="blue" name="color" value="Blue">
+          <label for="blue">Blue</label>
+          <input type="radio" id="green" name="color" value="Green">
+          <label for="green">Green</label>
+
+          <br>
+          <br>
+
+          <select name="m_f_config" id="m_f_config">
+            <option value="selectMorF">Select M or F Configuration of Bike</option>
+            <option id="m" value="M">M</option>
+            <option id="f" value="F">F</option>
+          </select>
+
+          <br>
+
+          <p>How Many Speeds?</p>
+          <input type="radio" id="three" name="speeds" value="Three">
+          <label for="three">Three</label>
+          <input type="radio" id="five" name="speeds" value="Five">
+          <label for="five">Five</label>
+          <input type="radio" id="ten" name="speeds" value="Ten">
+          <label for="ten">Ten</label>
+
+          <br>
+          <br>
+
+          <button type="submit" id="setMake">Make a New Bike</button>
+        </form>
+      </div>
+
+
+      
+      <div class="footer">
+        <a href="https://twitter.com/kim_ka96"><img src="img/twitter.jpg"alt="Kimberly Kohel-Hayes's Twitter Profile" height="30" width="30"></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://dev.to/kak79"><img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Kimberly Kohel-Hayes's DEV Profile" height="30" width="30"></a>&nbsp;&nbsp;&nbsp;
+        <a href='https://www.linkedin.com/in/kimberly-kohel-hayes-7b7413191/'><img src="img/linkedin.jpg"alt="Kimberly Kohel-Hayes's LinkedIn Profile" height="30" width="30"></a>&nbsp;&nbsp;&nbsp;
+        <a href='https://stackoverflow.com/users/13615178/kim'><img src="img/stack.jpg"alt="Kimberly Kohel-Hayes's Stack Overflow Profile" height="30" width="30"></a>&nbsp;&nbsp;&nbsp;
+        <a href='https://github.com/kak79?tab=repositories'><img src="img/git.png"alt="Kimberly Kohel-Hayes's Git Hub Repositories" height="30" width="30"></a>
+        <p id="license">License <a href='https://opensource.org/licenses/MIT'>MIT</a> & &copy; Kimberly A Kohel-Hayes</p>
+      </div>  
+    </div>
+    <script src=""></script>
+    </body>
+  </html>

@@ -1,4 +1,4 @@
-package com.revature.repositories;
+package com.revature.data;
 
 import java.io.IOException;
 import java.sql.Connection;
